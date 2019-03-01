@@ -6,10 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\URL;
 
-// Force SSL in production
-if ($this->app->environment() == 'production') {
-    URL::forceScheme('https');
-}
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -32,5 +29,9 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         //
+        // Force SSL in production
+        if ($this->app->environment() == 'production') {
+            URL::forceScheme('https');
+        }
     }
 }
