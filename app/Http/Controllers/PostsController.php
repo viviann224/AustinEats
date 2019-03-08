@@ -65,7 +65,7 @@ class PostsController extends Controller
           'cover_image' => 'image|nullable|max:1999'
         ]);
         //test to make sure validations work (success)
-        //return 123;
+
 
         //handle file upload
         if($request->hasFile("cover_image"))
@@ -79,10 +79,11 @@ class PostsController extends Controller
           //filename to Store
           $fileNameToStore =$filename.'_'.time().'.'.$extension;
           //upload image
-          //$path= $request->file("cover_image")->storeAs("public/cover_images",$fileNameToStore);
-          $path = Storage::disk('public')->put('uploads/', $fileNameToStore);
+          $path= $request->file("cover_image")->storeAs("public/cover_images",$fileNameToStore);
+          //$path = Storage::disk('public')->put('uploads/', $fileNameToStore);
 
         }else {
+          //no img default an image
           $fileNameToStore="noimage.jpg";
         }
 
