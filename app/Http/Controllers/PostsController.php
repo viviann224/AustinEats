@@ -32,7 +32,7 @@ class PostsController extends Controller
         //elequient styling
         //take a specific item
         //$posts= Post::orderBy("title", "dsc")->take(1)->get();
-        $posts= Post::orderBy("title", "asc")->get();
+        //$posts= Post::orderBy("title", "asc")->get();
         //pagination 3 per page
         $posts= Post::orderBy("created_at", "asc")->paginate(3);
 
