@@ -7,8 +7,10 @@
   @foreach($posts as $post)
     <div class="well">
       <div class="row">
-          <div class=" col-md-4 col-sm-4">
-            <img style="width:25%" src="/storage/cover_images/{{$post->cover_image}}">
+          <div class=" col-md-4 col-sm-4 ">
+
+              <img style="width:30%" src="/images/cover_image.jpg" class="coverImage ">
+
             <br><br>
           </div>
           <div class=" col-md-8 col-sm-8">

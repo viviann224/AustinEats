@@ -9,7 +9,7 @@ class PagesController extends Controller
     //
     public function index()
     {
-      $title="Welcome to Laravel!";
+      $title="Welcome to AustinEats!";
       //return view("pages.index", compact("title"));
       return view("pages.index")-> with("title", $title);
     }
