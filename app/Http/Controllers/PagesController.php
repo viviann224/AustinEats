@@ -26,7 +26,7 @@ class PagesController extends Controller
     // return view("pages.services")-> with("title", $title);
     $data =array(
        "title"=>"Services",
-       "services"=> ["web design", "programming", "SEO"]
+       "services"=> ["local coffee shops", "local resturants", "local food events"]
      );
     return view("pages.services")-> with($data);
     }
