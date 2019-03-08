@@ -1,22 +1,26 @@
 # AustinEats
 **GETTING STARTED**:
+
 The program should run automatically.
 
 If the program is not running automatically, please make sure you have all the prerequisites listed below.
 
 **STATEMENT OF PURPOSE**:
-<strong>AustinEats</strong> is a food application created to share information, personal experience, or tips at Resturants in the Austin location.
 
-The application begain as a way to document nearby restaurants  and alleviate time to make quick decisions on what to eat. The application now helps visitors and locals on places to dine
+<strong>AustinEats</strong> is a food application created to share information, personal experience, or tips at Restaurants in the Austin location.
+
+The application began as a way to document nearby restaurants  and alleviate time to make quick decisions on what to eat. The application now helps visitors and locals on places to dine
 
 **HOW TO USE**:
+
 <strong>AustinEats</strong> contains a series of posts that nonmembers and members can view. Members can create, edit, and remove their posts.
   <strong>AustinEats</strong> is a laravel application which runs via Heroku deployment and uses JawsDB SQL database.
 
   **BUILT WITH**:
-- Sublime Text
+- Composer
+- Atom
 - Chrome DevTools
-- Materialize
+- Bootstrap
 - Adobe Photoshop CC 2015.5
 - Sequel Pro
 - JawsDB
