@@ -16,6 +16,7 @@ class AddTopicToPost extends Migration
         //
         Schema::table("posts", function($table){
           $table-> integer("topic");
+          });
     }
 
     /**
@@ -28,5 +29,6 @@ class AddTopicToPost extends Migration
         //
         Schema::table("posts", function($table){
           $table-> dropColumn("topic");
+            });
     }
 }
