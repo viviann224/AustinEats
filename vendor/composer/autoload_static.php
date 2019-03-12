@@ -301,6 +301,7 @@ class ComposerStaticInitdd793d2df978424081d2171b5a18aad2
 
     public static $classMap = array (
         'AddCoverImageToPosts' => __DIR__ . '/../..' . '/database/migrations/2019_03_01_003636_add_cover_image_to_posts.php',
+        'AddTopicToPost' => __DIR__ . '/../..' . '/database/migrations/2019_03_12_200529_add_topic_to_post.php',
         'AddUserIdToPosts' => __DIR__ . '/../..' . '/database/migrations/2019_02_28_225158_add_user_id_to_posts.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',

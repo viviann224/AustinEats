@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AddCoverImageToPosts' => $baseDir . '/database/migrations/2019_03_01_003636_add_cover_image_to_posts.php',
+    'AddTopicToPost' => $baseDir . '/database/migrations/2019_03_12_200529_add_topic_to_post.php',
     'AddUserIdToPosts' => $baseDir . '/database/migrations/2019_02_28_225158_add_user_id_to_posts.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
