@@ -30,4 +30,15 @@ class PagesController extends Controller
      );
     return view("pages.services")-> with($data);
     }
+
+    // public function topics()
+    // {
+    // // {$title="SERVICES!";
+    // // return view("pages.services")-> with("title", $title);
+    // $data =array(
+    //    "title"=>"Topics",
+    //    "category"=> ["coffeeshop", "resturant", "foodevents"]
+    //  );
+    // return view("posts.index")-> with($data);
+    // }
 }

@@ -16,7 +16,7 @@ class PostsController extends Controller
    */
   public function __construct()
   {
-      $this->middleware('auth', ['except'=>["index", "show"]]);
+      $this->middleware('auth', ['except'=>["index", "show", "coffee", "event", "resturant"]]);
   }
     /**
      * Display a listing of the resource.
@@ -35,6 +35,27 @@ class PostsController extends Controller
         //$posts= Post::orderBy("title", "asc")->get();
         //pagination 3 per page
         $posts= Post::orderBy("created_at", "asc")->paginate(3);
+
+        return view("posts.index")->with("posts",$posts);
+    }
+
+    public function coffee()
+    {
+        $posts= Post::where("topic", "Local Coffee Shop")->paginate(3);
+
+        return view("posts.index")->with("posts",$posts);
+    }
+
+    public function event()
+    {
+        $posts= Post::where("topic", "Local Event")->paginate(3);
+
+        return view("posts.index")->with("posts",$posts);
+    }
+
+    public function resturant()
+    {
+        $posts= Post::where("topic", "Local Restaurant")->paginate(3);
 
         return view("posts.index")->with("posts",$posts);
     }
@@ -62,6 +83,7 @@ class PostsController extends Controller
         $this->validate($request, [
           'title'=>'required',
           'body'=> 'required',
+          'topic'=> 'required',
           'cover_image' => 'image|nullable|max:1999'
         ]);
         //test to make sure validations work (success)
@@ -91,6 +113,7 @@ class PostsController extends Controller
         $post = new Post;
         $post->title = $request->input("title");
         $post->body = $request->input("body");
+        $post->topic = $request->get("topic");
         $post->user_id = auth()->user()->id;
         $post->cover_image= $fileNameToStore;
         $post->save();
@@ -144,6 +167,7 @@ class PostsController extends Controller
         $this->validate($request, [
           'title'=>'required',
           'body'=> 'required',
+          'topic'=> 'required',
           'cover_image' => 'image|nullable|max:1999'
         ]);
 
@@ -171,6 +195,7 @@ class PostsController extends Controller
         $post = Post::find($id);
         $post->title = $request->input("title");
         $post->body = $request->input("body");
+        $post->topic = $request->get("topic");
         if($request->hasFile('cover_image'))
         { $post->cover_image=$fileNameToStore;}
         $post->save();

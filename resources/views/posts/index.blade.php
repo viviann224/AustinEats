@@ -1,11 +1,25 @@
 @extends("layouts.app")
 
 @section("content")
-<h1>POSTS</h1>
+
+<div class="row container">
+
+        <h1>POSTS</h1>
+  <div class="row ">
+    <small>Search by: </small>
+      <a class="btn-primary label  " href="/resturant" role="button">Local Restaurant</a>
+      <a class="btn-success label " href="/coffee" role="button">Local Coffee Shops</a>
+      <a class="btn-warning label" href="/event" role="button">Local Events</a>
+
+  </div>
+</div>
+
+
+
 
 @if(count($posts)>0)
   @foreach($posts as $post)
-    <div class="well">
+    <div class="well ">
       <div class="row">
           <div class=" col-md-4 col-sm-4 ">
 

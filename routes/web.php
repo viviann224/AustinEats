@@ -25,6 +25,11 @@ Route::get('/about', "PagesController@about");
 Route::get('/services',"PagesController@services");
 //creates post list
 Route::resource("posts", "PostsController");
+Route::get('/coffee',"PostsController@coffee");
+Route::get('/event',"PostsController@event");
+Route::get('/resturant',"PostsController@resturant");
+
+
 
 Auth::routes();
 
