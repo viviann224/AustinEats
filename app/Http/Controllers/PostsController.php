@@ -112,7 +112,10 @@ class PostsController extends Controller
         //create post
         $post = new Post;
         $post->title = $request->input("title");
-        $post->body = $request->input("body");
+        //removing sizing on img to responsive img
+        $output = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $request->input("body"));
+        $post->body=$output;
+        // $post->body = $request->input("body");
         $post->topic = $request->get("topic");
         $post->user_id = auth()->user()->id;
         $post->cover_image= $fileNameToStore;
@@ -132,9 +135,9 @@ class PostsController extends Controller
     {
         //
         $post=Post::find($id);
-        $output = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $post->body);
-        //echo $output;
-        $post->body=$output;
+        // $output = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $post->body);
+        // //echo $output;
+        // $post->body=$output;
         //echo strip_tags($post->body, "img");
         return view("posts.show")->with("post", $post);
     }
@@ -198,7 +201,10 @@ class PostsController extends Controller
         //find and update post
         $post = Post::find($id);
         $post->title = $request->input("title");
-        $post->body = $request->input("body");
+        //removing sizing on img to responsive img
+        $output = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $request->input("body"));
+        $post->body=$output;
+        //$post->body = $request->input("body");
         $post->topic = $request->get("topic");
         if($request->hasFile('cover_image'))
         { $post->cover_image=$fileNameToStore;}

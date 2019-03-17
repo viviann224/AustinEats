@@ -21,7 +21,7 @@
 
       <div class="form-group">
         {{Form::label("topic", "Topic")}}
-        {{Form::select('topic', array($post->topic, 'Local Coffee Shop' => 'Local Coffee Shop', 'Local Restaurant' => 'Local Restaurant', 'Local Event'=>'Local Event'),  null, array('class'=>'form-control','style'=>'' )) }}
+        {{Form::select('topic', array('Local Coffee Shop' => 'Local Coffee Shop', 'Local Restaurant' => 'Local Restaurant', 'Local Event'=>'Local Event'),  null, array('class'=>'form-control','style'=>'' )) }}
       </div>
       <!-- <div class="form-group">
         {{Form::file("cover_image")}}
