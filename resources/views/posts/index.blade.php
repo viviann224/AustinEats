@@ -24,13 +24,13 @@
           <div class=" col-md-4 col-sm-4 ">
 
               @if($post->topic=="Local Restaurant")
-                <img style="width:40%" src="/images/rest.jpg" class="coverImage ">
+                <img style="width:40%" src="/images/rest.jpg" class="coverImage img-rounded">
               @endif
               @if($post->topic=="Local Event")
-                <img style="width:40%" src="/images/event.jpg" class="coverImage ">
+                <img style="width:40%" src="/images/event.jpg" class="coverImage img-rounded">
               @endif
               @if($post->topic=="Local Coffee Shop")
-                <img style="width:40%" src="/images/coffee.jpg" class="coverImage ">
+                <img style="width:40%" src="/images/coffee.jpg" class="coverImage img-rounded">
               @endif
             <div class= "post-content label label-default"><strong>{{$post->topic}}</strong></div>
 
