@@ -116,6 +116,10 @@ class PostsController extends Controller
         $output = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $request->input("body"));
         $post->body=$output;
         // $post->body = $request->input("body");
+        if($request->get("topic")=="0")
+        {
+          $post->topic = "Local Coffee Shop";
+        }
         $post->topic = $request->get("topic");
         $post->user_id = auth()->user()->id;
         $post->cover_image= $fileNameToStore;
