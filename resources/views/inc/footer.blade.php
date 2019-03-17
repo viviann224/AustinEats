@@ -7,8 +7,8 @@
 
   <div class="col-xs-4 col-sm-4 col-md-4">
     <a href="https://viviann224.github.io/" class="socialLink" target="_blank"><img src="/images/social/logo.png" id="socialIcon"></a>
-    &nbsp <a href="https://github.com/viviann224" class="socialLink" target="_blank"><img src="/images/social/githublogo.png" id="socialIcon"></a>
-    &nbsp<a href="https://www.linkedin.com/in/viviantuongnguyen" class="socialLink" target="_blank"><img src="/images/social/linkedinlogo.png" id="socialIcon"></a>
+    <a href="https://github.com/viviann224" class="socialLink" target="_blank"><img src="/images/social/githublogo.png" id="socialIcon"></a>
+    <a href="https://www.linkedin.com/in/viviantuongnguyen" class="socialLink" target="_blank"><img src="/images/social/linkedinlogo.png" id="socialIcon"></a>
 </div>
     <!--<div class="row">
       <div class="col-md-4 col-sm-4">

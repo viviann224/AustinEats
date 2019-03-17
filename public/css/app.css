@@ -8386,6 +8386,7 @@ img {
 
 footer img {
   float: left;
+  margin-right: 6px !important;
 }
 
 #socialIcon:hover {
