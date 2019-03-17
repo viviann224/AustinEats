@@ -8,7 +8,9 @@
       <h1>{{$post->title}}</h1>
     </div>
   <!-- <img style="width:100%" src="/storage/cover_images/{{$post->cover_image}}"> -->
-    <div class="panel-body">
+    <div class="panel-body reviewPost">
+     
+
         {!!$post->body!!}
         <hr>
         <small>Written on {{$post->created_at}} by: {{$post->user->name}}</small>

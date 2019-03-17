@@ -132,6 +132,10 @@ class PostsController extends Controller
     {
         //
         $post=Post::find($id);
+        $output = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $post->body);
+        //echo $output;
+        $post->body=$output;
+        //echo strip_tags($post->body, "img");
         return view("posts.show")->with("post", $post);
     }
 

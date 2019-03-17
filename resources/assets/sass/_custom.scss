@@ -23,6 +23,14 @@
   background: #222;
   border-color:#090909;
   color:#9d9d9d;
+  text-align: center !important;
+
+}
+
+.footerBody
+{
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .copyRight
 {
@@ -35,8 +43,17 @@
   padding-bottom: 29px;
 }
 
+
+img{
+  max-width: 100%;
+    height: auto;
+    display:block;
+
+}
+
 .socialIcon
 {
+  margin:0px;
   width:20px;
   -webkit-transform: rotate(0deg);
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
@@ -54,3 +71,9 @@
 {
     background: #222 !important;
 }
+// .reviewPost img::before{
+//   max-width: 80%;
+//   height: auto;
+//   display:block;
+//
+// }
