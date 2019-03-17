@@ -8370,25 +8370,35 @@ button.close {
   padding-bottom: 29px;
 }
 
+img#socialIcon {
+  padding: 0px;
+  width: 20px;
+  height: 20px;
+  -webkit-transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+}
+
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-.socialIcon {
-  margin: 0px;
-  width: 20px;
-  -webkit-transform: rotate(0deg);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+footer img {
+  float: left;
 }
 
-.socialIcon:hover {
+#socialIcon:hover {
+  margin: 0px !important;
+  width: 20px;
+  height: 20px;
   -webkit-transform: rotate(350deg);
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
 }
 
-.socialLink:hover {
+.socialLink:hover .socialLink:link {
+  width: 20px;
+  height: 20px;
   background: #222 !important;
 }
 
