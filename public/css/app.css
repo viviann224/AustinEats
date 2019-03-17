@@ -8348,3 +8348,34 @@ button.close {
   background: #ffffff !important;
 }
 
+.footer {
+  width: 100%;
+  background: #222;
+  border-color: #090909;
+  color: #9d9d9d;
+}
+
+.copyRight {
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.mainContainer {
+  padding-bottom: 29px;
+}
+
+.socialIcon {
+  width: 20px;
+  -webkit-transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+}
+
+.socialIcon:hover {
+  -webkit-transform: rotate(350deg);
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+}
+
+.socialLink:hover {
+  background: #222 !important;
+}
+

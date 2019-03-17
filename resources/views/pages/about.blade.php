@@ -6,7 +6,7 @@
 
       <p>The application began as a way to document nearby restaurants  and alleviate time to make quick decisions on what to eat. The application now helps visitors and locals on places to dine</p>
 
-      <p><strong>AustinEats</strong> contains a series of posts that nonmembers and members can view. Members can create, edit, and remove their posts.
+      <p><strong>AustinEats</strong> contains a series of posts that non-members and members can view. Members can create, edit, and remove their posts.
         <strong>AustinEats</strong> is a laravel application which runs via <a href="https://heroku.com/apps" target="_blank">Heroku</a> deployment and uses <a href="https://elements.heroku.com/addons/jawsdb" target="_blank">JawsDB</a> SQL database.</p>
 
 @endsection

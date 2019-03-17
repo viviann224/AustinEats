@@ -17,14 +17,16 @@
     <div id="app">
 
         @include("inc.navbar")
-        <div class="container">
+        <div class="container mainContainer">
           @include("inc.messages")
           @yield('content')
         </div>
 
-
+@include("inc.footer")
 
     </div>
+
+
 
     <!-- Scripts -->
     <script src="{{ elixir('js/app.js') }}"></script>
