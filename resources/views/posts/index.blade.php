@@ -23,9 +23,18 @@
       <div class="row">
           <div class=" col-md-4 col-sm-4 ">
 
-              <img style="width:30%" src="/images/cover_image.jpg" class="coverImage ">
+              @if($post->topic=="Local Restaurant")
+                <img style="width:40%" src="/images/rest.jpg" class="coverImage ">
+              @endif
+              @if($post->topic=="Local Event")
+                <img style="width:40%" src="/images/event.jpg" class="coverImage ">
+              @endif
+              @if($post->topic=="Local Coffee Shop")
+                <img style="width:40%" src="/images/coffee.jpg" class="coverImage ">
+              @endif
+            <div class= "post-content label label-default"><strong>{{$post->topic}}</strong></div>
 
-            <br><br>
+
           </div>
           <div class=" col-md-8 col-sm-8">
             <h3><a href="/posts/{{$post->id}}">{{$post->title}}</a></h3>
