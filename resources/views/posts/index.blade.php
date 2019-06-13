@@ -7,9 +7,12 @@
         <h1>POSTS</h1>
   <div class="row ">
     <small>Search by: </small>
+     <a class="btn-info label" href="/posts" role="button">All</a>
       <a class="btn-primary label  " href="/resturant" role="button">Local Restaurant</a>
       <a class="btn-success label " href="/coffee" role="button">Local Coffee Shops</a>
       <a class="btn-warning label" href="/event" role="button">Local Events</a>
+
+
 
   </div>
 </div>
